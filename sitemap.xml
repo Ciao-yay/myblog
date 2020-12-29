@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/nciao/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    
+    <lastmod>2020-12-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/nciao/myblog/2020/12/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-gitee%EF%BC%89/</loc>
     
     <lastmod>2020-12-29</lastmod>
@@ -33,6 +40,13 @@
   
   <url>
     <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
+    <lastmod>2020-12-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/vscode/</loc>
     <lastmod>2020-12-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

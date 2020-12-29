@@ -6,7 +6,7 @@
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
-  <updated>2020-12-29T15:13:39.952Z</updated>
+  <updated>2020-12-29T15:16:40.103Z</updated>
   <id>https://gitee.com/nciao/myblog/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vs code使用优化（一）</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2020-12-29T15:16:07.000Z</published>
+    <updated>2020-12-29T15:16:40.103Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="粒子特效（powermode）"><a href="#粒子特效（powermode）" class="headerlink" title="粒子特效（powermode）"></a>粒子特效（powermode）</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>在插件中心搜索并下载</p><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>在首选项中打开setting.json（可以通过搜索找到）</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// power mode</span></span><br><span class="line">&quot;powermode.enabled&quot;:true,// 这个必须打开，默认样式的话，只配置这个就行了</span><br><span class="line"></span><br><span class="line"><span class="comment">// 特效，只能选择一个打开，</span></span><br><span class="line"><span class="comment">// 粒子</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;particles&quot;,</span></span><br><span class="line"><span class="comment">// 时间间隔</span></span><br><span class="line">&quot;powermode.comboTimeout&quot;: 0,</span><br><span class="line"><span class="comment">// 抖动</span></span><br><span class="line">&quot;powermode.enableShake&quot;: false,</span><br><span class="line"><span class="comment">//样式</span></span><br><span class="line"><span class="comment">// 火焰</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;flames&quot;,</span></span><br><span class="line"><span class="comment">// 炸裂</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;exploding-rift&quot;,</span></span><br><span class="line"><span class="comment">// 爆炸</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;simple-rift&quot;,</span></span><br><span class="line"><span class="comment">// 粒子</span></span><br><span class="line">&quot;powermode.presets&quot;: &quot;particles&quot;,</span><br><span class="line"><span class="comment">// 烟花</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;fireworks&quot;,</span></span><br><span class="line"><span class="comment">// 魔法</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;magic&quot;,</span></span><br><span class="line"><span class="comment">// 回形针</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;clippy&quot;,</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 其他设置</span></span><br><span class="line"><span class="comment">// 时间间隔</span></span><br><span class="line"><span class="comment">// &quot;powermode.comboTimeout&quot;: 0,</span></span><br><span class="line"><span class="comment">// 抖动，默认为true</span></span><br><span class="line"><span class="comment">// &quot;powermode.enableShake&quot;: false,</span></span><br><span class="line"><span class="comment">// &quot;powermode.enableShake&quot;: true,</span></span><br><span class="line"><span class="comment">// 随字体颜色变化</span></span><br><span class="line">&quot;powermode.backgroundMode&quot;: &quot;mask&quot;,// 这个我设置了感觉没啥用</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;粒子特效（powermode）&quot;&gt;&lt;a href=&quot;#粒子特效（powermode）&quot; class=&quot;headerlink&quot; title=&quot;粒子特效（powermode）&quot;&gt;&lt;/a&gt;粒子特效（powermode）&lt;/h3&gt;&lt;h4 id=&quot;下载&quot;&gt;&lt;a href=&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="vscode" scheme="https://gitee.com/nciao/myblog/tags/vscode/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建个人博客博客（hexo+gitee）</title>
