@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/nciao/myblog/2020/12/29/Git%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2020-12-29</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/nciao/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     
     <lastmod>2020-12-29</lastmod>
@@ -37,6 +44,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/Git/</loc>
+    <lastmod>2020-12-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
