@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://gitee.com/nciao/myblog">
   <title>vs code使用优化（一） | Truthy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="粒子特效（powermode）下载在插件中心搜索并下载 配置在首选项中打开setting.json（可以通过搜索找到） 12345678910111213141516171819202122232425262728293031323334&#x2F;&#x2F; power mode&quot;powermode.enabled&quot;:true,&#x2F;&#x2F; 这个必须打开，默认样式的话，只配置这个就行了&#x2F;&#x2F; 特效，只能">
+  <meta name="description" content="利用vsCode的插件来提升体验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vs code使用优化（一）">
 <meta property="og:url" content="https://gitee.com/nciao/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Truthy">
-<meta property="og:description" content="粒子特效（powermode）下载在插件中心搜索并下载 配置在首选项中打开setting.json（可以通过搜索找到） 12345678910111213141516171819202122232425262728293031323334&#x2F;&#x2F; power mode&quot;powermode.enabled&quot;:true,&#x2F;&#x2F; 这个必须打开，默认样式的话，只配置这个就行了&#x2F;&#x2F; 特效，只能">
+<meta property="og:description" content="利用vsCode的插件来提升体验">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-12-29T15:16:07.000Z">
-<meta property="article:modified_time" content="2020-12-29T15:16:40.103Z">
+<meta property="article:modified_time" content="2020-12-30T15:16:21.780Z">
 <meta property="article:author" content="Truthy">
 <meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
@@ -24,7 +24,7 @@
     <link rel="alternative" href="/atom.xml" title="Truthy" type="application/atom+xml">
   
   
-    <link rel="icon" href="img/yay.png">
+    <link rel="icon" href="./img/syay.png">
   
   <link rel="stylesheet" type="text/css" href="/myblog/./main.0cf68a.css">
   <style type="text/css">
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/myblog/" class="profilepic">
-			<img src="img/avatar.jpg" class="js-avatar">
+			<img src="./img/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/myblog/"></a></h1>
@@ -60,7 +60,7 @@
 			
 				<li><a href="/myblog/">主页</a></li>
 	        
-				<li><a href="/myblog/tags/">随笔</a></li>
+				<li><a href="/myblog/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -86,9 +86,7 @@
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/Nove01" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="qq" target="_blank" href="/myblog/1430781660" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="mail" target="_blank" href="/myblog/1430781660@qq.com" title="mail"><i class="icon-mail"></i></a>
+					<a class="qq" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gqPFb0jkuFoEkHjfUK8noYVb4WrAjenA&noverify=0" title="qq"><i class="icon-qq"></i></a>
 		        
 			</div>
 		</nav>
@@ -106,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="img/avatar.jpg" class="js-avatar">
+				<img src="./img/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -127,9 +125,7 @@
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/Nove01" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="qq" target="_blank" href="/myblog/1430781660" title="qq"><i class="icon-qq"></i></a>
-			        
-						<a class="mail" target="_blank" href="/myblog/1430781660@qq.com" title="mail"><i class="icon-mail"></i></a>
+						<a class="qq" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gqPFb0jkuFoEkHjfUK8noYVb4WrAjenA&noverify=0" title="qq"><i class="icon-qq"></i></a>
 			        
 				</div>
 			</nav>
@@ -140,7 +136,7 @@
 				
 					<li style="width: 50%"><a href="/myblog/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/myblog/tags/">随笔</a></li>
+					<li style="width: 50%"><a href="/myblog/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -175,7 +171,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="粒子特效（powermode）"><a href="#粒子特效（powermode）" class="headerlink" title="粒子特效（powermode）"></a>粒子特效（powermode）</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>在插件中心搜索并下载</p>
+        <p>利用vsCode的插件来提升体验</p>
+<a id="more"></a>
+
+<h3 id="粒子特效（powermode）"><a href="#粒子特效（powermode）" class="headerlink" title="粒子特效（powermode）"></a>粒子特效（powermode）</h3><h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>在插件中心搜索并下载</p>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>在首选项中打开setting.json（可以通过搜索找到）</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// power mode</span></span><br><span class="line">&quot;powermode.enabled&quot;:true,// 这个必须打开，默认样式的话，只配置这个就行了</span><br><span class="line"></span><br><span class="line"><span class="comment">// 特效，只能选择一个打开，</span></span><br><span class="line"><span class="comment">// 粒子</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;particles&quot;,</span></span><br><span class="line"><span class="comment">// 时间间隔</span></span><br><span class="line">&quot;powermode.comboTimeout&quot;: 0,</span><br><span class="line"><span class="comment">// 抖动</span></span><br><span class="line">&quot;powermode.enableShake&quot;: false,</span><br><span class="line"><span class="comment">//样式</span></span><br><span class="line"><span class="comment">// 火焰</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;flames&quot;,</span></span><br><span class="line"><span class="comment">// 炸裂</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;exploding-rift&quot;,</span></span><br><span class="line"><span class="comment">// 爆炸</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;simple-rift&quot;,</span></span><br><span class="line"><span class="comment">// 粒子</span></span><br><span class="line">&quot;powermode.presets&quot;: &quot;particles&quot;,</span><br><span class="line"><span class="comment">// 烟花</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;fireworks&quot;,</span></span><br><span class="line"><span class="comment">// 魔法</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;magic&quot;,</span></span><br><span class="line"><span class="comment">// 回形针</span></span><br><span class="line"><span class="comment">// &quot;powermode.presets&quot;: &quot;clippy&quot;,</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 其他设置</span></span><br><span class="line"><span class="comment">// 时间间隔</span></span><br><span class="line"><span class="comment">// &quot;powermode.comboTimeout&quot;: 0,</span></span><br><span class="line"><span class="comment">// 抖动，默认为true</span></span><br><span class="line"><span class="comment">// &quot;powermode.enableShake&quot;: false,</span></span><br><span class="line"><span class="comment">// &quot;powermode.enableShake&quot;: true,</span></span><br><span class="line"><span class="comment">// 随字体颜色变化</span></span><br><span class="line">&quot;powermode.backgroundMode&quot;: &quot;mask&quot;,// 这个我设置了感觉没啥用</span><br></pre></td></tr></table></figure>
 
@@ -319,6 +318,32 @@
 
 
   
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "k7xKeMiujODDWA00ud6dLubL-gzGzoHsz",
+    app_key: "N00fvIzAYlFotk3aByTDDC0l",
+    placeholder: "这里留言。。",
+    avatar: "wavatar",
+  });
+</script>
+
+  </section>
+  
+  
   
   
 
@@ -327,6 +352,8 @@
   
 
   
+
+
 
 
           </div>
@@ -526,7 +553,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">没有人！&lt;br&gt;在少年时想成为一个普通人。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;center&gt;没有人！&lt;/center&gt;&lt;br&gt;在少年时想成为一个普通人。</div>
   	  	
     	</section>
     
