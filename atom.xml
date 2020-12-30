@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  
-  
+  <title>Truthy</title>
+  <icon>https://www.gravatar.com/avatar/599bd970a8d1c5523bea9490c73d01b9</icon>
+  <subtitle>欲买桂花同载酒，终不似，少年游</subtitle>
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
@@ -11,7 +11,7 @@
   
   <author>
     <name>Truthy</name>
-    
+    <email>1430781660@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
