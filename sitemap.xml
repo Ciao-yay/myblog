@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/nciao/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/</loc>
+    
+    <lastmod>2020-12-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/</loc>
     
     <lastmod>2020-12-30</lastmod>
@@ -60,7 +67,21 @@
 
   
   <url>
-    <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
+    <loc>https://gitee.com/nciao/myblog/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/%E8%AF%AD%E4%B9%89%E5%8C%96/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -74,7 +95,21 @@
   </url>
   
   <url>
+    <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://gitee.com/nciao/myblog/tags/vscode/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -96,13 +131,6 @@
   
   <url>
     <loc>https://gitee.com/nciao/myblog/tags/new-blog/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

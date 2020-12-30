@@ -6,7 +6,7 @@
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
-  <updated>2020-12-30T15:36:26.681Z</updated>
+  <updated>2020-12-30T15:49:28.385Z</updated>
   <id>https://gitee.com/nciao/myblog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web 语义化</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/</id>
+    <published>2020-12-30T15:47:13.000Z</published>
+    <updated>2020-12-30T15:49:28.385Z</updated>
+    
+    <content type="html"><![CDATA[<p>专事专做，说说前端语义化。</p><a id="more"></a><h1 id="语义化"><a href="#语义化" class="headerlink" title="语义化"></a>语义化</h1><h3 id="什么是语义化"><a href="#什么是语义化" class="headerlink" title="什么是语义化"></a>什么是语义化</h3><p>在合适的位置使用符合语义的标签，语义化标签包括</p><ul><li><p>h1~h6</p><p>一到六级标题标签，一般来说h1一个页面只能用一次</p></li><li><p>ul、li等</p><p>列表标签</p></li><li><p>header、nav、main、footer</p><p>主体结构标签，可见名知意，一般header只能用一次</p></li><li><p>aside</p><p>侧边栏</p></li><li><p>section</p><p>没有实际意义的标签，作为独立的一部分，建议不用</p></li><li><p>hgroup</p><p>分组，例如有多篇文章时可以用，每篇文章放在一个hgroup里</p></li><li><p>article</p><p>元素表示文档、页面、应用或网站中的独立结构，是可独立分配的、可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。</p></li></ul><p><strong>结构图</strong></p><p><img src="http://www.daqianduan.com/wp-content/uploads/2018/03/html5.png" alt="html5"></p><hr><h3 id="有什么用"><a href="#有什么用" class="headerlink" title="有什么用"></a>有什么用</h3><ul><li>保持网页大体结构。在失去css等样式时，网页内容会保持大体结构。</li><li>用户体验。结合图片的alt属性、label标签等能更好地呈现未能加载的图片。</li><li>SEO。使用语义化的网页能更好地被搜索引擎搜索到，也便于爬虫提取信息。</li><li>利于其他设备的解析。阅读器等设备能更好地根据语义结构解析网页呈现内容。</li><li>利于开发维护。W3C遵循的规范，使用语义化标签利于团队协作，减少差异化，提高开发效率。</li></ul><hr><h3 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h3><p>就自己的感受来说，大家更多的运用的是类选择器的语义化。也就是不管什么位置，不管什么内容，全用div盒子，只是取类名时贴合语义，俗称div狂魔。</p><p>我感觉因为前几年前端的局势过于混乱，所以语义化规范一直没有很好地落实，但是目前前端趋于稳定，所以语义化又被重视起来。</p><p>不管怎么说，使用语义化的网页结构看起来更舒服，更成系统，而且这也是良好代码规范的一种体现，所以用起来总归没有错的</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;专事专做，说说前端语义化。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="前端" scheme="https://gitee.com/nciao/myblog/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="语义化" scheme="https://gitee.com/nciao/myblog/tags/%E8%AF%AD%E4%B9%89%E5%8C%96/"/>
+    
+    <category term="标签" scheme="https://gitee.com/nciao/myblog/tags/%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>每日总结-2020.12.30</title>
