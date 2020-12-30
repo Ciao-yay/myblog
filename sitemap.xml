@@ -60,14 +60,14 @@
 
   
   <url>
-    <loc>https://gitee.com/nciao/myblog/tags/Git/</loc>
+    <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gitee.com/nciao/myblog/tags/new-post/</loc>
+    <loc>https://gitee.com/nciao/myblog/tags/Git/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
