@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/</loc>
+    
+    <lastmod>2020-12-30</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/nciao/myblog/2020/12/29/Git%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2020-12-30</lastmod>
@@ -43,13 +50,6 @@
     
   </url>
   
-  <url>
-    <loc>https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/</loc>
-    
-    <lastmod>2020-12-30</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://gitee.com/nciao/myblog</loc>
@@ -81,13 +81,6 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2020-12-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gitee.com/nciao/myblog/tags/gitee/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
@@ -103,6 +96,13 @@
   
   <url>
     <loc>https://gitee.com/nciao/myblog/tags/new-blog/</loc>
+    <lastmod>2020-12-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2020-12-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
