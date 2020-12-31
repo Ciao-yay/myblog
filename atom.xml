@@ -6,7 +6,7 @@
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
-  <updated>2020-12-30T15:49:28.385Z</updated>
+  <updated>2020-12-31T15:48:51.769Z</updated>
   <id>https://gitee.com/nciao/myblog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>每日总结-2020.12.31</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/31/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-31/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/31/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-31/</id>
+    <published>2020-12-31T15:40:40.000Z</published>
+    <updated>2020-12-31T15:48:51.769Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1363948882&auto=0&height=32"></iframe><blockquote><p>载入史册的一年，你们都是拯救世界的英雄。再见，2020。</p></blockquote><a id="more"></a><h5 id="今日安排"><a href="#今日安排" class="headerlink" title="今日安排"></a>今日安排</h5><ul><li><p>昨日回顾</p></li><li><p>复习总结</p></li><li><p>移动端布局方案</p><p>是个较大的知识体系，正在吸收中</p></li></ul><p>今天放个小假。</p>]]></content>
+    
+    
+    <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=298 height=52 src=&quot;//music.163.com/outchain/player?type=2&amp;id=1363948882&amp;auto=0&amp;height=32&quot;&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;载入史册的一年，你们都是拯救世界的英雄。再见，2020。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+    <category term="每日总结" scheme="https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>Web 语义化</title>
@@ -44,9 +67,9 @@
     <link href="https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/"/>
     <id>https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/</id>
     <published>2020-12-30T15:06:14.000Z</published>
-    <updated>2020-12-30T15:36:26.681Z</updated>
+    <updated>2020-12-31T15:47:10.196Z</updated>
     
-    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=316498&auto=0&height=32"></iframe><blockquote><p>没有人！在年少时想成为一个普通人。</p></blockquote><a id="more"></a><h5 id="今日安排"><a href="#今日安排" class="headerlink" title="今日安排"></a>今日安排</h5><ul><li>复习总结</li><li>debug</li><li>个人网站搭建（先完成前两步）<ul><li>选择布局方案（响应式布局）</li></ul></li></ul><hr><h5 id="新词"><a href="#新词" class="headerlink" title="新词"></a>新词</h5><ul><li><p>SEO</p><p>Search Engine Optimization，搜索引擎优化，能让自己在搜索引擎的结果上提高自然排名。通过语义化认识。</p></li></ul><h5 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h5><p><strong>总结知识点时</strong></p><p>最好分点叙述，每个点提炼总述出来，例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">语义化有什么优点？</span><br><span class="line"></span><br><span class="line">我的答案</span><br><span class="line">- 失去样式时能看出大体结构</span><br><span class="line">- 对于某些设备，如阅读器等，通过语义化标签能够更好地呈现出内容</span><br><span class="line">- 团队协作，一看就懂，提高工作效率</span><br><span class="line">- 良好的代码风格，代码规范</span><br><span class="line">别人的答案</span><br><span class="line">1</span><br><span class="line">- 易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。</span><br><span class="line">- 有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</span><br><span class="line">- 方便其他设备解析，如盲人阅读器根据语义渲染网页</span><br><span class="line">- 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</span><br><span class="line">2</span><br><span class="line">- 用户体验：例如title、alt用于解释名词或解释图片信息、label标签的活用；</span><br><span class="line">- 有利于SEO搜索引擎优化：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；</span><br><span class="line">- 方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以意义的方式来渲染网页；</span><br><span class="line">- 便于团队开发和维护，语义化更具可读性，是下一步吧网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化。</span><br></pre></td></tr></table></figure><p><strong>在沟通时</strong></p><p>找工作的例子，招聘群里hr小姐姐问谁还找工作的</p><p>别人的回答</p><p><img src="https://imgbed.nciao.cn/md/sidd.jpg" alt="img"></p><p>而我的回答是:”有的”</p><p>。。。相比之下，别人的就感觉很真诚</p><p>这里需要知道别人要什么，自己有什么，先问清楚，这样也更真诚 </p>]]></content>
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=316498&auto=0&height=32"></iframe><blockquote><p>没有人！在年少时想成为一个普通人。</p></blockquote><a id="more"></a><h5 id="今日安排"><a href="#今日安排" class="headerlink" title="今日安排"></a>今日安排</h5><ul><li>复习总结</li><li>debug</li><li>个人网站搭建（先完成前两步）<ul><li>选择布局方案（响应式布局）</li></ul></li></ul><hr><h5 id="今日完成"><a href="#今日完成" class="headerlink" title="今日完成"></a>今日完成</h5><ul><li><p>复习总结</p><ul><li>Web语义化</li></ul></li><li><p>debug</p><ul><li>解决pc端样式加载不全的问题</li></ul></li><li><p>完善个人博客</p><p>大佬的经验：<a href="https://blog.csdn.net/lynnbest/article/details/79845944?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control">定制博客</a></p><ul><li>评论系统<ul><li>无后端评论系统：<a href="https://valine.js.org/">valine</a></li><li>valine配套使用的云服务<a href="%5Bhttps://leancloud.c%5D(https://leancloud.cn/)">leanCloud</a></li></ul></li><li>文章展示摘要</li><li>音乐播放器</li><li>图床<ul><li><a href="https://portal.qiniu.com/">七牛云</a></li></ul></li></ul></li><li><p>然后后面就没时间做其它任务了，注意时间安排！</p></li></ul><h5 id="新词"><a href="#新词" class="headerlink" title="新词"></a>新词</h5><ul><li><p>SEO</p><p>Search Engine Optimization，搜索引擎优化，能让自己在搜索引擎的结果上提高自然排名。通过语义化认识。</p></li></ul><hr><h5 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h5><p><strong>总结知识点时</strong></p><p>最好分点叙述，每个点提炼总述出来，例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">语义化有什么优点？</span><br><span class="line"></span><br><span class="line">我的答案</span><br><span class="line">- 失去样式时能看出大体结构</span><br><span class="line">- 对于某些设备，如阅读器等，通过语义化标签能够更好地呈现出内容</span><br><span class="line">- 团队协作，一看就懂，提高工作效率</span><br><span class="line">- 良好的代码风格，代码规范</span><br><span class="line">别人的答案</span><br><span class="line">1</span><br><span class="line">- 易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。</span><br><span class="line">- 有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</span><br><span class="line">- 方便其他设备解析，如盲人阅读器根据语义渲染网页</span><br><span class="line">- 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</span><br><span class="line">2</span><br><span class="line">- 用户体验：例如title、alt用于解释名词或解释图片信息、label标签的活用；</span><br><span class="line">- 有利于SEO搜索引擎优化：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；</span><br><span class="line">- 方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以意义的方式来渲染网页；</span><br><span class="line">- 便于团队开发和维护，语义化更具可读性，是下一步吧网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化。</span><br></pre></td></tr></table></figure><p><strong>在沟通时</strong></p><p>找工作的例子，招聘群里hr小姐姐问谁还找工作的</p><p>别人的回答</p><p>![img](file:///C:\Users\Truthy\Documents\Tencent Files\1430781660\Image\C2C\B759C5A66381ABCB80D14D123D54835C.jpg)</p><p>而我的回答是，有的。。。</p><p>相比之下，别人的就感觉很真诚</p><p>这里需要知道别人要什么，自己有什么，先问清楚，这样也更真诚 </p><p><strong>安排</strong></p><p>今天的安排都被打乱了，完善博客停不下来。</p><p>一些重要程度不高的事或者需要时间的事该停就停，不能因为一件事打乱当天所有安排。</p>]]></content>
     
     
     <summary type="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=298 height=52 src=&quot;//music.163.com/outchain/player?type=2&amp;id=316498&amp;auto=0&amp;height=32&quot;&gt;&lt;/iframe&gt;
