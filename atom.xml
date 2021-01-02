@@ -6,7 +6,7 @@
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
-  <updated>2020-12-31T15:48:51.769Z</updated>
+  <updated>2021-01-02T02:42:38.726Z</updated>
   <id>https://gitee.com/nciao/myblog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu Server 18.04.1 LTS 64位可视化桌面教程</title>
+    <link href="https://gitee.com/nciao/myblog/2021/01/02/Ubuntu-Server-18-04-1-LTS-64%E4%BD%8D%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2%E6%95%99%E7%A8%8B/"/>
+    <id>https://gitee.com/nciao/myblog/2021/01/02/Ubuntu-Server-18-04-1-LTS-64%E4%BD%8D%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2%E6%95%99%E7%A8%8B/</id>
+    <published>2021-01-02T02:39:09.000Z</published>
+    <updated>2021-01-02T02:42:38.726Z</updated>
+    
+    <content type="html"><![CDATA[<p>Ubuntu Server 18.04.1 LTS 64位可视化桌面教程</p><a id="more"></a><h1 id="Ubuntu-可视化桌面"><a href="#Ubuntu-可视化桌面" class="headerlink" title="Ubuntu 可视化桌面"></a>Ubuntu 可视化桌面</h1><h3 id="设备基础"><a href="#设备基础" class="headerlink" title="设备基础"></a>设备基础</h3><p>平台：腾讯云</p><p>版本：Ubuntu Server 18.04.1 LTS 64位</p><p>登陆方式：建议安装可视化桌面时先采用标准登录方式，这一种方式始终是命令行界面</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102095628595.png" alt="image-20210102095628595"></p><p>安装好可视化桌面后，要体验需要采用VNC登录方式</p><h3 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h3><h4 id="更新资源库"><a href="#更新资源库" class="headerlink" title="更新资源库"></a>更新资源库</h4><p>更新资源，依次执行以下命令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 更新资源列表</span></span><br><span class="line">sudo apt-get update</span><br><span class="line"><span class="meta">#</span><span class="bash"> 更新资源,-y是确认</span></span><br><span class="line">sudo apt-get upgrade -y</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>需要等一会，出现以下提示，前两个选项都可以，不影响后面的操作。图方便选第一个就好。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 您想对修改的配置文件做什么？</span></span><br><span class="line">what do you want to do about modified conf iguration file 50unattended-upgrades?</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装程序包可维护的版本</span></span><br><span class="line">install package maintainer’s version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 保持当前本地已安装的版本</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102093743335.png" alt="image-20210102093743335"></p><h4 id="安装可视化桌面"><a href="#安装可视化桌面" class="headerlink" title="安装可视化桌面"></a>安装可视化桌面</h4><p>安装可视化桌面，这一步会等比较久</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ubuntu-desktop -y</span><br></pre></td></tr></table></figure><h4 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h4><p>等安装好后重启</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure><p>不管之前是什么登陆方式，这之后要用VNC方式登录</p><p>会有提示选择第一项就好</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102100955478.png" alt="image-20210102100955478"></p><p>你会看到欢迎界面，点击Next</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102101115009.png" alt="image-20210102101115009"></p><p>选择键盘或输入法，中文</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102101904506.png" alt="image-20210102101904506"></p><p>位置信息，直接下一步，这里不放图了。不想授权的关掉就好。</p><p>选择时区，在搜索框搜索Beijing并选择，然后下一步</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102102143965.png" alt="image-20210102102143965"></p><p>选择账号，都没有，直接跳过。</p><p>设置用户，随便输你想要的名字，以下admin仅为示例。作为用户目录文件夹的名字且不能修改，也作为登录用户的名字。填好上面下面会自动补齐。</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102102905795.png" alt="image-20210102102905795"></p><p>设置密码</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102103014758.png" alt="image-20210102103014758"></p><p>欧克，Ready to go!</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102103105565.png" alt="image-20210102103105565"></p><p>点击用户，输入密码并登录</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102103133789.png" alt="image-20210102103133789"></p><p>就能看到可视化桌面了</p><p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20210102103242925.png" alt="image-20210102103242925"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Ubuntu Server 18.04.1 LTS 64位可视化桌面教程&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Ubuntu" scheme="https://gitee.com/nciao/myblog/tags/Ubuntu/"/>
+    
+    <category term="教程" scheme="https://gitee.com/nciao/myblog/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>每日总结-2020.12.31</title>
