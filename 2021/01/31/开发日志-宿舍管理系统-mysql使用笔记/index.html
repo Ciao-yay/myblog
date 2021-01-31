@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gitee.com/nciao/myblog">
-  <title>Truthy</title>
+  <title>开发日志-宿舍管理系统-mysql使用笔记 | Truthy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="热爱前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Truthy">
-<meta property="og:url" content="https://gitee.com/nciao/myblog/index.html">
+  <meta name="description" content="我在开发宿舍管理系统的过程中，发现自己关于数据库的相关操作不熟悉，这篇博客用来记录、总结开发过程中使用过的数据库操作。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发日志-宿舍管理系统-mysql使用笔记">
+<meta property="og:url" content="https://gitee.com/nciao/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-mysql%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Truthy">
-<meta property="og:description" content="热爱前端">
+<meta property="og:description" content="我在开发宿舍管理系统的过程中，发现自己关于数据库的相关操作不熟悉，这篇博客用来记录、总结开发过程中使用过的数据库操作。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-31T15:13:56.000Z">
+<meta property="article:modified_time" content="2021-01-31T15:16:44.527Z">
 <meta property="article:author" content="Truthy">
-<meta property="article:tag" content="前端,微信小程序,js,H5,Vue">
+<meta property="article:tag" content="开发日志">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Truthy" type="application/atom+xml">
@@ -149,174 +152,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-开发日志-宿舍管理系统-在项目中体会vue" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-开发日志-宿舍管理系统-mysql使用笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%93%E4%BC%9Avue/">开发日志-宿舍管理系统-在项目中体会vue</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%93%E4%BC%9Avue/" class="archive-article-date">
-  	<time datetime="2021-01-31T15:53:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>记录方法、总结经验。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开发日志</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%93%E4%BC%9Avue/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-开发日志-宿舍管理系统-在vue项目中使用ElementUI" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8ElementUI/">开发日志-宿舍管理系统-在vue项目中使用ElementUI</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8ElementUI/" class="archive-article-date">
-  	<time datetime="2021-01-31T15:33:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>记录方法、总结经验。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开发日志</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ElementUI</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8ElementUI/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-开发日志-宿舍管理系统-mysql使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-mysql%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">开发日志-宿舍管理系统-mysql使用笔记</a>
+    <h1 class="article-title" itemprop="name">
+      开发日志-宿舍管理系统-mysql使用笔记
     </h1>
   
 
@@ -330,9 +173,46 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>我在开发宿舍管理系统的过程中，发现自己关于数据库的相关操作不熟悉，这篇博客用来记录、总结开发过程中使用过的数据库操作。</p>
-        
+<a id="more"></a>
+
+<h1 id="mysql基本操作"><a href="#mysql基本操作" class="headerlink" title="mysql基本操作"></a>mysql基本操作</h1><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="CRUD"><a href="#CRUD" class="headerlink" title="CRUD"></a>CRUD</h3><p>crud对应的就是增（create）、删（delete）、改（update）、查（read）</p>
+<h4 id="增（create）"><a href="#增（create）" class="headerlink" title="增（create）"></a>增（create）</h4><p>增在mysql中对应<code>INSERT INTO</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name(field1,field2) <span class="keyword">VALUES</span>(value1,value2)</span><br></pre></td></tr></table></figure>
+<h4 id="删（delete）"><a href="#删（delete）" class="headerlink" title="删（delete）"></a>删（delete）</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 删除表中所有记录</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br><span class="line"># 删除表中符合某种条件的记录</span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name <span class="keyword">WHERE</span> isOut <span class="operator">=</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="改（update）"><a href="#改（update）" class="headerlink" title="改（update）"></a>改（update）</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 条件写在<span class="keyword">WHERE</span>后面</span><br><span class="line"><span class="keyword">UPDATE</span> table_name <span class="keyword">SET</span> field1 <span class="operator">=</span> value1,field2 <span class="operator">=</span> value2 [<span class="keyword">WHERE</span> <span class="operator">=</span> ...]</span><br></pre></td></tr></table></figure>
+<h4 id="查（read）"><a href="#查（read）" class="headerlink" title="查（read）"></a>查（read）</h4><p>查在mysql中对应<code>SELECT</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查询所有字段</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> table_name</span><br><span class="line"># 查询指定字段field1,field2</span><br><span class="line"><span class="keyword">SELECT</span> field1,field2 <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
+<h3 id="视图（view）"><a href="#视图（view）" class="headerlink" title="视图（view）"></a>视图（view）</h3><p>视图，没有实际结构，根据原始表数据而来，随原始表数据变动而变</p>
+<p>数据库原始表中的记录常常不是我们直接需要的，获取后需要进行处理，为了简化操作，我们可以先通过视图处理一遍数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 创建视图</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> view_name <span class="keyword">AS</span> 查询语句</span><br><span class="line"># 修改视图</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">VIEW</span> view_name <span class="keyword">AS</span> 查询语句</span><br><span class="line"># 删除视图</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">VIEW</span> view_name</span><br><span class="line"># 查询视图，与查询表的方式相同</span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> view_name</span><br><span class="line"># 视图结构</span><br><span class="line"><span class="keyword">DESC</span> view_name</span><br></pre></td></tr></table></figure>
+<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><h4 id="唯一性"><a href="#唯一性" class="headerlink" title="唯一性"></a>唯一性</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span>(filed1);</span><br></pre></td></tr></table></figure>
+<p>todo</p>
+<h2 id="项目经验"><a href="#项目经验" class="headerlink" title="项目经验"></a>项目经验</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><h5 id="通过身份证查询出性别、生日、年龄、所在省市等"><a href="#通过身份证查询出性别、生日、年龄、所在省市等" class="headerlink" title="通过身份证查询出性别、生日、年龄、所在省市等"></a>通过身份证查询出性别、生日、年龄、所在省市等</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> id,<span class="keyword">YEAR</span> (now()) <span class="operator">-</span> <span class="keyword">YEAR</span> (<span class="built_in">substring</span>(id_number, <span class="number">7</span>, <span class="number">8</span>)) age, <span class="built_in">CAST</span>(<span class="built_in">SUBSTRING</span>(id_number,<span class="number">7</span>,<span class="number">8</span>) <span class="keyword">as</span> <span class="type">date</span>) <span class="keyword">as</span> birth_date,`name`,<span class="keyword">case</span> if(length(id_number)<span class="operator">=</span><span class="number">18</span>, <span class="built_in">cast</span>(<span class="built_in">substring</span>(id_number,<span class="number">17</span>,<span class="number">1</span>) <span class="keyword">as</span> UNSIGNED)<span class="operator">%</span><span class="number">2</span>, if(length(id_number)<span class="operator">=</span><span class="number">15</span>,<span class="built_in">cast</span>(<span class="built_in">substring</span>(id_number,<span class="number">15</span>,<span class="number">1</span>) <span class="keyword">as</span> UNSIGNED)<span class="operator">%</span><span class="number">2</span>,<span class="number">3</span>)) </span><br><span class="line"><span class="keyword">when</span> <span class="number">1</span> <span class="keyword">then</span> <span class="string">&#x27;男&#x27;</span></span><br><span class="line"><span class="keyword">when</span> <span class="number">0</span> <span class="keyword">then</span> <span class="string">&#x27;女&#x27;</span></span><br><span class="line"><span class="keyword">else</span> <span class="string">&#x27;未知&#x27;</span></span><br><span class="line"><span class="keyword">end</span> <span class="keyword">as</span> gender,telphone,p </span><br><span class="line">ost <span class="keyword">FROM</span> <span class="keyword">user</span></span><br></pre></td></tr></table></figure>
+<h3 id="索引-1"><a href="#索引-1" class="headerlink" title="索引"></a>索引</h3><h5 id="设置唯一性"><a href="#设置唯一性" class="headerlink" title="设置唯一性"></a>设置唯一性</h5><p>todo</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -356,16 +236,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-mysql%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://gitee.com/nciao/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-mysql%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/myblog/2021/01/31/%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97-%E5%AE%BF%E8%88%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E5%9C%A8vue%E9%A1%B9%E7%9B%AE%E4%B8%AD%E4%BD%BF%E7%94%A8ElementUI/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          开发日志-宿舍管理系统-在vue项目中使用ElementUI
+        
+      </div>
+    </a>
+  
+  
+    <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">学习笔记-登录态维护</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -385,567 +333,43 @@
 
 
 
-
-
   
-    <article id="post-学习笔记-登录态维护" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/">学习笔记-登录态维护</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/" class="archive-article-date">
-  	<time datetime="2021-01-31T00:57:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-学习笔记-nodejs-核心模块（一）-fs模块" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/">学习笔记-nodejs-核心模块（一）-fs模块</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/" class="archive-article-date">
-  	<time datetime="2021-01-31T00:54:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>nodejs的核心模块之fs模块的相关介绍与操作</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodejs</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-学习笔记-nodejs-npm包管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-npm%E5%8C%85%E7%AE%A1%E7%90%86/">学习笔记-nodejs-npm包管理</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-npm%E5%8C%85%E7%AE%A1%E7%90%86/" class="archive-article-date">
-  	<time datetime="2021-01-31T00:49:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>nodejs中npm的相关介绍与操作</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodejs</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-npm%E5%8C%85%E7%AE%A1%E7%90%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-Ubuntu-中文环境配置-图文教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/02/Ubuntu-%E4%B8%AD%E6%96%87%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/">Ubuntu 中文环境配置-图文教程</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/02/Ubuntu-%E4%B8%AD%E6%96%87%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2021-01-02T06:48:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ubuntu 中文环境配置，包括时区设置、中文显示以及中文输入法。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/02/Ubuntu-%E4%B8%AD%E6%96%87%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-Ubuntu-Server-18-04-1-LTS-64位可视化桌面教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2021/01/02/Ubuntu-Server-18-04-1-LTS-64%E4%BD%8D%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2%E6%95%99%E7%A8%8B/">Ubuntu 18.04.1 可视化桌面教程</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2021/01/02/Ubuntu-Server-18-04-1-LTS-64%E4%BD%8D%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2%E6%95%99%E7%A8%8B/" class="archive-article-date">
-  	<time datetime="2021-01-02T02:39:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ubuntu Server 18.04.1 LTS 64位可视化桌面教程</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2021/01/02/Ubuntu-Server-18-04-1-LTS-64%E4%BD%8D%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A1%8C%E9%9D%A2%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-说说-2020-12-31" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2020/12/31/%E8%AF%B4%E8%AF%B4-2020-12-31/">说说-2020.12.31</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2020/12/31/%E8%AF%B4%E8%AF%B4-2020-12-31/" class="archive-article-date">
-  	<time datetime="2020-12-31T15:40:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1363948882&auto=0&height=32"></iframe>
-
-<blockquote>
-<p>载入史册的一年，你们都是拯救世界的英雄。再见，2020。</p>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">说说</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2020/12/31/%E8%AF%B4%E8%AF%B4-2020-12-31/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-Web-语义化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/">Web 语义化</a>
-    </h1>
-  
-
-        
-        <a href="/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/" class="archive-article-date">
-  	<time datetime="2020-12-30T15:47:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>专事专做，说说前端语义化。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">语义化</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">标签</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/myblog/2020/12/30/Web-%E8%AF%AD%E4%B9%89%E5%8C%96/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "k7xKeMiujODDWA00ud6dLubL-gzGzoHsz",
+    app_key: "N00fvIzAYlFotk3aByTDDC0l",
+    placeholder: "这里留言。。",
+    avatar: "wavatar",
+  });
+</script>
+
+  </section>
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/myblog/page/2/">2</a><a class="extend next" rel="next" href="/myblog/page/2/">Next &amp;raquo;</a>
-    </nav>
   
+  
+
+  
+
+  
+
+  
+
+
 
 
           </div>
@@ -967,8 +391,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
