@@ -6,7 +6,7 @@
   <link href="https://gitee.com/nciao/myblog/atom.xml" rel="self"/>
   
   <link href="https://gitee.com/nciao/myblog/"/>
-  <updated>2021-01-02T07:06:13.025Z</updated>
+  <updated>2021-01-31T01:01:23.894Z</updated>
   <id>https://gitee.com/nciao/myblog/</id>
   
   <author>
@@ -15,6 +15,67 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习笔记-登录态维护</title>
+    <link href="https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/"/>
+    <id>https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/</id>
+    <published>2021-01-31T00:57:57.000Z</published>
+    <updated>2021-01-31T01:01:23.894Z</updated>
+    
+    <content type="html"><![CDATA[<p>登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。</p><a id="more"></a><!-- More--><h1 id="登录态维护"><a href="#登录态维护" class="headerlink" title="登录态维护"></a>登录态维护</h1><h3 id="cookie、session"><a href="#cookie、session" class="headerlink" title="cookie、session"></a>cookie、session</h3><h4 id="原生"><a href="#原生" class="headerlink" title="原生"></a>原生</h4><p>http的cookie有一来一回，后端给前端设置cookie叫种cookie，用setCookie在请求首部里添加Cookie字段，前端给后端用Cookie: </p><h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><p><a href="https://www.npmjs.com/package/cookie-session">cookie-session</a></p><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install cookie-session</span><br></pre></td></tr></table></figure><h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* app.js */</span></span><br><span class="line"><span class="comment">// 引入cookie-session</span></span><br><span class="line"><span class="keyword">const</span> cookieSession = <span class="built_in">require</span>(<span class="string">&#x27;cookie-session&#x27;</span>)</span><br><span class="line"><span class="comment">// 设置session</span></span><br><span class="line">app.use(cookieSession(&#123;</span><br><span class="line">  name: <span class="string">&#x27;session&#x27;</span>,</span><br><span class="line">  keys: [<span class="string">&#x27;key1&#x27;</span>, <span class="string">&#x27;key2&#x27;</span>],<span class="comment">// 密码</span></span><br><span class="line">  maxAge: <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span><span class="comment">// 以毫秒为单位</span></span><br><span class="line">&#125;))</span><br><span class="line"><span class="comment">/* route.js */</span></span><br><span class="line"><span class="comment">// 设置字段</span></span><br><span class="line">req.session.username = username</span><br><span class="line"><span class="comment">// 删除session</span></span><br><span class="line">req.session = <span class="literal">null</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><ul><li><code>maxAge</code>: a number representing the milliseconds from <code>Date.now()</code> for expiry</li><li><code>expires</code>: a <code>Date</code> object indicating the cookie’s expiration date (expires at the end of session by default).</li><li><code>path</code>: a string indicating the path of the cookie (<code>/</code> by default).</li><li><code>domain</code>: a string indicating the domain of the cookie (no default).</li><li><code>secure</code>: a boolean indicating whether the cookie is only to be sent over HTTPS (<code>false</code> by default for HTTP, <code>true</code> by default for HTTPS).</li><li><code>secureProxy</code>: a boolean indicating whether the cookie is only to be sent over HTTPS (use this if you handle SSL not in your node process).</li><li><code>httpOnly</code>: a boolean indicating whether the cookie is only to be sent over HTTP(S), and not made available to client JavaScript (<code>true</code> by default).</li><li><code>signed</code>: a boolean indicating whether the cookie is to be signed (<code>true</code> by default).</li><li><code>overwrite</code>: a boolean indicating whether to overwrite previously set cookies of the same name (<code>true</code> by default).</li></ul></blockquote><h3 id="token"><a href="#token" class="headerlink" title="token"></a>token</h3><p>todo</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://gitee.com/nciao/myblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习笔记-nodejs-核心模块（一）-fs模块</title>
+    <link href="https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/"/>
+    <id>https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/</id>
+    <published>2021-01-31T00:54:38.000Z</published>
+    <updated>2021-01-31T00:56:38.826Z</updated>
+    
+    <content type="html"><![CDATA[<p>nodejs的核心模块之fs模块的相关介绍与操作</p><a id="more"></a><h1 id="fs-模块"><a href="#fs-模块" class="headerlink" title="fs 模块"></a>fs 模块</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入</span></span><br><span class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>)</span><br><span class="line"><span class="comment">// 同步读取</span></span><br><span class="line">fs.readFileSync(<span class="string">&#x27;./keys/rsa_private_key.pem&#x27;</span>)</span><br><span class="line"><span class="comment">// 异步读取</span></span><br><span class="line">fs.readFile(<span class="string">&#x27;./keys/rsa_private_key.pem&#x27;</span>)</span><br><span class="line"><span class="comment">// 同步写入</span></span><br><span class="line">fs.writeFileSync(<span class="string">&#x27;./keys/rsa_private_key.pem&#x27;</span>)</span><br><span class="line"><span class="comment">// 异步写入</span></span><br><span class="line">fs.writeFile(<span class="string">&#x27;./keys/rsa_private_key.pem&#x27;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;nodejs的核心模块之fs模块的相关介绍与操作&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://gitee.com/nciao/myblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="nodejs" scheme="https://gitee.com/nciao/myblog/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习笔记-nodejs-npm包管理</title>
+    <link href="https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-npm%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    <id>https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-npm%E5%8C%85%E7%AE%A1%E7%90%86/</id>
+    <published>2021-01-31T00:49:17.000Z</published>
+    <updated>2021-01-31T00:55:22.319Z</updated>
+    
+    <content type="html"><![CDATA[<p>nodejs中npm的相关介绍与操作</p><a id="more"></a><h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><p>nodejs自带的包管理器，类似的有yarn</p><h3 id="安装相关"><a href="#安装相关" class="headerlink" title="安装相关"></a>安装相关</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装模块并保存到配置文件</span></span><br><span class="line">npm install xxx --S</span><br><span class="line">npm install xxx --Save</span><br><span class="line"><span class="meta">#</span><span class="bash"> 全局安装模块</span></span><br><span class="line">npm install xxx --G</span><br><span class="line">npm install xxx --global</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装配置文件的里模块</span></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;nodejs中npm的相关介绍与操作&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="学习笔记" scheme="https://gitee.com/nciao/myblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="nodejs" scheme="https://gitee.com/nciao/myblog/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu 中文环境配置-图文教程</title>
@@ -59,11 +120,11 @@
   </entry>
   
   <entry>
-    <title>每日总结-2020.12.31</title>
-    <link href="https://gitee.com/nciao/myblog/2020/12/31/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-31/"/>
-    <id>https://gitee.com/nciao/myblog/2020/12/31/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-31/</id>
+    <title>说说-2020.12.31</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/31/%E8%AF%B4%E8%AF%B4-2020-12-31/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/31/%E8%AF%B4%E8%AF%B4-2020-12-31/</id>
     <published>2020-12-31T15:40:40.000Z</published>
-    <updated>2020-12-31T15:48:51.769Z</updated>
+    <updated>2021-01-31T00:46:31.409Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1363948882&auto=0&height=32"></iframe><blockquote><p>载入史册的一年，你们都是拯救世界的英雄。再见，2020。</p></blockquote><a id="more"></a><h5 id="今日安排"><a href="#今日安排" class="headerlink" title="今日安排"></a>今日安排</h5><ul><li><p>昨日回顾</p></li><li><p>复习总结</p></li><li><p>移动端布局方案</p><p>是个较大的知识体系，正在吸收中</p></li></ul><p>今天放个小假。</p>]]></content>
     
@@ -77,7 +138,7 @@
     
     
     
-    <category term="每日总结" scheme="https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/"/>
+    <category term="说说" scheme="https://gitee.com/nciao/myblog/tags/%E8%AF%B4%E8%AF%B4/"/>
     
   </entry>
   
@@ -105,11 +166,11 @@
   </entry>
   
   <entry>
-    <title>每日总结-2020.12.30</title>
-    <link href="https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/"/>
-    <id>https://gitee.com/nciao/myblog/2020/12/30/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-30/</id>
+    <title>说说-2020.12.30</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/30/%E8%AF%B4%E8%AF%B4-2020-12-30/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/30/%E8%AF%B4%E8%AF%B4-2020-12-30/</id>
     <published>2020-12-30T15:06:14.000Z</published>
-    <updated>2020-12-31T15:47:10.196Z</updated>
+    <updated>2021-01-31T00:46:44.943Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=316498&auto=0&height=32"></iframe><blockquote><p>没有人！在年少时想成为一个普通人。</p></blockquote><a id="more"></a><h5 id="今日安排"><a href="#今日安排" class="headerlink" title="今日安排"></a>今日安排</h5><ul><li>复习总结</li><li>debug</li><li>个人网站搭建（先完成前两步）<ul><li>选择布局方案（响应式布局）</li></ul></li></ul><hr><h5 id="今日完成"><a href="#今日完成" class="headerlink" title="今日完成"></a>今日完成</h5><ul><li><p>复习总结</p><ul><li>Web语义化</li></ul></li><li><p>debug</p><ul><li>解决pc端样式加载不全的问题</li></ul></li><li><p>完善个人博客</p><p>大佬的经验：<a href="https://blog.csdn.net/lynnbest/article/details/79845944?utm_medium=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-searchFromBaidu-1.control">定制博客</a></p><ul><li>评论系统<ul><li>无后端评论系统：<a href="https://valine.js.org/">valine</a></li><li>valine配套使用的云服务<a href="%5Bhttps://leancloud.c%5D(https://leancloud.cn/)">leanCloud</a></li></ul></li><li>文章展示摘要</li><li>音乐播放器</li><li>图床<ul><li><a href="https://portal.qiniu.com/">七牛云</a></li></ul></li></ul></li><li><p>然后后面就没时间做其它任务了，注意时间安排！</p></li></ul><h5 id="新词"><a href="#新词" class="headerlink" title="新词"></a>新词</h5><ul><li><p>SEO</p><p>Search Engine Optimization，搜索引擎优化，能让自己在搜索引擎的结果上提高自然排名。通过语义化认识。</p></li></ul><hr><h5 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h5><p><strong>总结知识点时</strong></p><p>最好分点叙述，每个点提炼总述出来，例如</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">语义化有什么优点？</span><br><span class="line"></span><br><span class="line">我的答案</span><br><span class="line">- 失去样式时能看出大体结构</span><br><span class="line">- 对于某些设备，如阅读器等，通过语义化标签能够更好地呈现出内容</span><br><span class="line">- 团队协作，一看就懂，提高工作效率</span><br><span class="line">- 良好的代码风格，代码规范</span><br><span class="line">别人的答案</span><br><span class="line">1</span><br><span class="line">- 易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。</span><br><span class="line">- 有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</span><br><span class="line">- 方便其他设备解析，如盲人阅读器根据语义渲染网页</span><br><span class="line">- 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</span><br><span class="line">2</span><br><span class="line">- 用户体验：例如title、alt用于解释名词或解释图片信息、label标签的活用；</span><br><span class="line">- 有利于SEO搜索引擎优化：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；</span><br><span class="line">- 方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以意义的方式来渲染网页；</span><br><span class="line">- 便于团队开发和维护，语义化更具可读性，是下一步吧网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化。</span><br></pre></td></tr></table></figure><p><strong>在沟通时</strong></p><p>找工作的例子，招聘群里hr小姐姐问谁还找工作的</p><p>别人的回答</p><p>![img](file:///C:\Users\Truthy\Documents\Tencent Files\1430781660\Image\C2C\B759C5A66381ABCB80D14D123D54835C.jpg)</p><p>而我的回答是，有的。。。</p><p>相比之下，别人的就感觉很真诚</p><p>这里需要知道别人要什么，自己有什么，先问清楚，这样也更真诚 </p><p><strong>安排</strong></p><p>今天的安排都被打乱了，完善博客停不下来。</p><p>一些重要程度不高的事或者需要时间的事该停就停，不能因为一件事打乱当天所有安排。</p>]]></content>
     
@@ -123,16 +184,16 @@
     
     
     
-    <category term="每日总结" scheme="https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/"/>
+    <category term="说说" scheme="https://gitee.com/nciao/myblog/tags/%E8%AF%B4%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
-    <title>每日总结-2020.12.29</title>
-    <link href="https://gitee.com/nciao/myblog/2020/12/29/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-29/"/>
-    <id>https://gitee.com/nciao/myblog/2020/12/29/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-29/</id>
+    <title>说说-2020.12.29</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/29/%E8%AF%B4%E8%AF%B4-2020-12-29/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/29/%E8%AF%B4%E8%AF%B4-2020-12-29/</id>
     <published>2020-12-29T15:35:48.000Z</published>
-    <updated>2020-12-30T15:15:55.058Z</updated>
+    <updated>2021-01-31T00:46:54.970Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=486806&auto=0&height=32"></iframe><blockquote><p>请深出右手，张开五指，看，它像什么？请把右手五指并拢，放于腰间，慢慢高举，举过头顶，张开。成功了吗，那恭喜你！你给自己放了个烟花。</p></blockquote><a id="more"></a><h5 id="2020-12-29"><a href="#2020-12-29" class="headerlink" title="2020.12.29"></a>2020.12.29</h5><p><strong>学习部分</strong></p><ul><li><p>Sass预处理语言的学习</p><ul><li>看了一哈官方文档，感觉和Less很像，最后还是决定用Less了</li><li>用一个东西前先看生态，感觉Sass的生态不太好，在B站都找不到例子</li></ul></li><li><p>移动端自适应布局练习</p><ul><li>跟着b站pink老师学的，b站真是人才济济</li><li>注意代码规范<ul><li>语义化</li><li>嵌套层数不要过多</li><li>尽量避免权重过高或范围过大的选择器</li><li>属性书写顺序也要做要求</li></ul></li></ul><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1. 类名语义化,尽量精短、明确，必须以字母开头命名，且全部字母为小写，单词之间统一使用下划线“_” 连接</span><br><span class="line">2. 类名嵌套层次尽量不超过三层</span><br><span class="line">3. 尽量避免直接使用元素选择器</span><br><span class="line">4. 属性书写顺序</span><br><span class="line">   布局定位属性：<span class="selector-tag">display</span> / <span class="selector-tag">position</span> / <span class="selector-tag">float</span> / <span class="selector-tag">clear</span> / <span class="selector-tag">visibility</span> / <span class="selector-tag">overflow</span></span><br><span class="line">   尺寸属性：<span class="selector-tag">width</span> / <span class="selector-tag">height</span> / <span class="selector-tag">margin</span> / <span class="selector-tag">padding</span> / <span class="selector-tag">border</span> / <span class="selector-tag">background</span></span><br><span class="line">   文本属性：<span class="selector-tag">color</span> / <span class="selector-tag">font</span> / <span class="selector-tag">text-decoration</span> / <span class="selector-tag">text-align</span> / <span class="selector-tag">vertical-align</span></span><br><span class="line">   其他属性（<span class="selector-tag">CSS3</span>）：<span class="selector-tag">content</span> / <span class="selector-tag">cursor</span> / <span class="selector-tag">border-radius</span> / <span class="selector-tag">box-shadow</span> / <span class="selector-tag">text-shadow</span></span><br><span class="line">5. 避免使用<span class="selector-tag">id</span>选择器</span><br><span class="line">6. 避免使用通配符*和!<span class="selector-tag">important</span></span><br></pre></td></tr></table></figure></li><li><p>目录规范</p></li><li><p>mock结合ps使用，真的方便</p><ul><li>切图</li><li>下载图片</li><li>协作开发</li></ul></li><li><p>移动端适配方案</p><ul><li>flex 布局  </li><li>百分比布局</li><li>rem布局</li><li>vw/vh布局</li><li>响应式布局</li><li>本次案例  flex + rem + + flexible.js +  LESS   </li></ul></li><li><p>swiper插件的使用</p></li><li><p>码云部署静态资源</p><ul><li>git init</li></ul></li><li><p>vscode的插件</p><ul><li>easy less</li><li>cssrem</li></ul></li><li><p>bug</p><ul><li><p>今天bug有点多</p></li><li><p>关于 LF will be replaced by CRLF 问题出现的原因以及解决方式</p><p><a href="https://blog.csdn.net/wowoniuzailushang/article/details/54317129">https://blog.csdn.net/wowoniuzailushang/article/details/54317129</a></p></li><li><p>注意重置样式表要写在最前面，否则会覆盖掉你写的样式</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 注意重置样式表要写在最前面，否则会覆盖掉你写的样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/normalize.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/swiper-bundle.min.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./css/index.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p>部署到码云的网站部分css代码不生效</p><p>应该是浏览器缓存的问题，手机都能正常访问</p><p>各种重新提交后都没有用，最后把浏览器缓存清除后重新打开就好了</p></li></ul></li><li><p>附上该例子链接</p><p><a href="https://nciao.gitee.io/interview/">https://nciao.gitee.io/interview/</a></p></li></ul><p><strong>其他</strong></p><ul><li>看了一个小姐姐从专科到985研究生的道路，真的有这么大的潜力吗，我也想试试</li><li>还看了一个衡水中学学霸的演讲，有文化的人真不一样，自信的样子真酷！</li><li>学习学习！</li></ul><p><strong>待办</strong></p><ul><li>复习今日所学</li><li>面试题总结</li><li>debug</li><li>个人网站</li><li>待办事项</li><li>线上答题系统重构</li></ul>]]></content>
     
@@ -146,16 +207,16 @@
     
     
     
-    <category term="每日总结" scheme="https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/"/>
+    <category term="说说" scheme="https://gitee.com/nciao/myblog/tags/%E8%AF%B4%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
-    <title>每日总结-2020.12.28</title>
-    <link href="https://gitee.com/nciao/myblog/2020/12/29/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-28/"/>
-    <id>https://gitee.com/nciao/myblog/2020/12/29/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93-2020-12-28/</id>
+    <title>说说-2020.12.28</title>
+    <link href="https://gitee.com/nciao/myblog/2020/12/29/%E8%AF%B4%E8%AF%B4-2020-12-28/"/>
+    <id>https://gitee.com/nciao/myblog/2020/12/29/%E8%AF%B4%E8%AF%B4-2020-12-28/</id>
     <published>2020-12-29T15:32:46.000Z</published>
-    <updated>2020-12-30T15:16:10.983Z</updated>
+    <updated>2021-01-31T00:47:05.778Z</updated>
     
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1436709403&auto=0&height=32"></iframe><blockquote><p>我常常想，别人尊重我，是因为，我很优秀，可是后来才发现，别人尊重我，是因为，别人很优秀。</p></blockquote><a id="more"></a><h5 id="2020-12-28"><a href="#2020-12-28" class="headerlink" title="2020.12.28"></a>2020.12.28</h5><ul><li>个人博客搭建<ul><li>hexo</li><li>git</li></ul></li></ul><p>终于有了第一个属于自己的博客，很开心！目前还比较low，会慢慢往自己的服务器上部署。</p>]]></content>
     
@@ -169,7 +230,7 @@
     
     
     
-    <category term="每日总结" scheme="https://gitee.com/nciao/myblog/tags/%E6%AF%8F%E6%97%A5%E6%80%BB%E7%BB%93/"/>
+    <category term="说说" scheme="https://gitee.com/nciao/myblog/tags/%E8%AF%B4%E8%AF%B4/"/>
     
   </entry>
   

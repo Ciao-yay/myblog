@@ -6,24 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gitee.com/nciao/myblog">
-  <title>搭建个人博客博客（hexo+gitee） | Truthy</title>
+  <title>学习笔记-登录态维护 | Truthy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="用hexo+gitee搭建个人博客">
+  <meta name="description" content="登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建个人博客博客（hexo+gitee）">
-<meta property="og:url" content="https://gitee.com/nciao/myblog/2020/12/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-gitee%EF%BC%89/index.html">
+<meta property="og:title" content="学习笔记-登录态维护">
+<meta property="og:url" content="https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/index.html">
 <meta property="og:site_name" content="Truthy">
-<meta property="og:description" content="用hexo+gitee搭建个人博客">
+<meta property="og:description" content="登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="c:/Users/Truthy/AppData/Roaming/Typora/typora-user-images/image-20201228233112969.png">
-<meta property="article:published_time" content="2020-12-29T15:10:00.000Z">
-<meta property="article:modified_time" content="2020-12-30T15:14:25.639Z">
+<meta property="article:published_time" content="2021-01-31T00:57:57.000Z">
+<meta property="article:modified_time" content="2021-01-31T01:01:23.894Z">
 <meta property="article:author" content="Truthy">
-<meta property="article:tag" content="gitee">
-<meta property="article:tag" content="hexo">
-<meta property="article:tag" content="new blog">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/Truthy/AppData/Roaming/Typora/typora-user-images/image-20201228233112969.png">
   
     <link rel="alternative" href="/atom.xml" title="Truthy" type="application/atom+xml">
   
@@ -155,79 +151,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-搭建个人博客博客（hexo-gitee）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-学习笔记-登录态维护" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      搭建个人博客博客（hexo+gitee）
+      学习笔记-登录态维护
     </h1>
   
 
         
-        <a href="/myblog/2020/12/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-gitee%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-12-29T15:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-29</time>
+        <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/" class="archive-article-date">
+  	<time datetime="2021-01-31T00:57:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>用hexo+gitee搭建个人博客</p>
+        <p>登录态的维护让我掉了不少头发，现在总结集中维护登录态的方式。</p>
 <a id="more"></a>
 
-<h2 id="个人博客板块（hexo-gitee）"><a href="#个人博客板块（hexo-gitee）" class="headerlink" title="个人博客板块（hexo+gitee）"></a>个人博客板块（hexo+gitee）</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>node<br>npm<br>cnpm</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 安装hexo</span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line">// 查看版本</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>准备一个新文件夹，这里以myblog为例</p>
-<p>在该文件夹下初始化博客</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p>初始化成功会提示</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
-<h3 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">// 简写</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>成功得到以下提示</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<h3 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new &#x27;title&#x27;</span><br><span class="line">// 简写</span><br><span class="line">hexo n &#x27;title&#x27;</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="清理再生成"><a href="#清理再生成" class="headerlink" title="清理再生成"></a>清理再生成</h3><p>在根目录下清理</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<p>再生成博客内容</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">// 简写</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<p>重启服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>应该是新建博客才需要重新生成，在帖子里修改的内容，刷新帖子后就能看到改变</p>
-<h3 id="部署到gitee上"><a href="#部署到gitee上" class="headerlink" title="部署到gitee上"></a>部署到gitee上</h3><p>在gitee上新建仓库</p>
-<p>仓库名称与路径一致</p>
-<p><img src="C:\Users\Truthy\AppData\Roaming\Typora\typora-user-images\image-20201228233112969.png" alt="image-20201228233112969"></p>
-<p>重要的是仓库地址，仓库地址与路径相关</p>
-<p>回到终端安装插件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm i --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>更改配置<code>_config.yml</code>文件，直接拉到底部，将type的值改为git，将repo改为上面的仓库地址，</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Deployment</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Docs: https://hexo.io/docs/one-command-deployment</span></span></span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;&#x27;</span><br><span class="line">// 改成如下</span><br><span class="line"><span class="meta">#</span><span class="bash"> Deployment</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Docs: https://hexo.io/docs/one-command-deployment</span></span></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://nciao.gitee.io/myblog # 仓库地址</span><br><span class="line">  branch: master # 默认就为master</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>部署到远端</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>在对应仓库的导航栏中选择服务，部署网页，成功后该页面会更新出网页的地址</p>
-<p>每次更改页面内容都需要执行    清理&gt;生成&gt;提交&gt;更新部署    这四个流程</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">// 最后在码云对应仓库的服务中更新部署</span><br></pre></td></tr></table></figure>
-<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>找到目标主题，以butterfly主题为例，一般在作者的github上也有教程。</p>
-<p>在终端的博客根目录下克隆该主题</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>下载成功后可以在theme文件夹中找到bytterfly文件夹</p>
-<p>接下来在根目录下更改配置文件config.yml</p>
-<p>找到theme，将theme的值改为对应主题名，这里是butterfly</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Extensions</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Plugins: https://hexo.io/plugins/</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Themes: https://hexo.io/themes/</span></span></span><br><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure>
-<p>执行更新流程，更新网页就能看到新主题了</p>
-<h4 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h4><h5 id="重新部署后，页面没有css样式"><a href="#重新部署后，页面没有css样式" class="headerlink" title="重新部署后，页面没有css样式"></a>重新部署后，页面没有css样式</h5><p>查看报错信息，发现页面请求的样式资源未找到，所以应该是静态资源的请求路径有问题，在_config.yml文件中更改如下配置</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 默认配置如下</span><br><span class="line">url: http://example.com/child</span><br><span class="line">root: /</span><br><span class="line">// 改为对应的仓库地址</span><br><span class="line">url: https://gitee.com/nciao/myblog</span><br><span class="line">root: /myblog</span><br></pre></td></tr></table></figure>
-<p>重新部署网页</p>
-<h5 id="更换部分主题后，提示extends-includes-layout-pug-block-content-include-includes-recent-posts-pug-include"><a href="#更换部分主题后，提示extends-includes-layout-pug-block-content-include-includes-recent-posts-pug-include" class="headerlink" title="更换部分主题后，提示extends includes/layout.pug block content include includes/recent-posts.pug include"></a>更换部分主题后，提示extends includes/layout.pug block content include includes/recent-posts.pug include</h5><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44318830/article/details/104884936">https://blog.csdn.net/weixin_44318830/article/details/104884936</a></p>
-<p>以下是官方的解决办法</p>
-<p>If you don’t have pug &amp; stylus renderer, try this:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus</span><br></pre></td></tr></table></figure>
-<p>安装成功后重新部署</p>
+<!-- More-->
+
+<h1 id="登录态维护"><a href="#登录态维护" class="headerlink" title="登录态维护"></a>登录态维护</h1><h3 id="cookie、session"><a href="#cookie、session" class="headerlink" title="cookie、session"></a>cookie、session</h3><h4 id="原生"><a href="#原生" class="headerlink" title="原生"></a>原生</h4><p>http的cookie有一来一回，后端给前端设置cookie叫种cookie，用setCookie在请求首部里添加Cookie字段，前端给后端用Cookie: </p>
+<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><p><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/cookie-session">cookie-session</a></p>
+<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install cookie-session</span><br></pre></td></tr></table></figure>
+<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* app.js */</span></span><br><span class="line"><span class="comment">// 引入cookie-session</span></span><br><span class="line"><span class="keyword">const</span> cookieSession = <span class="built_in">require</span>(<span class="string">&#x27;cookie-session&#x27;</span>)</span><br><span class="line"><span class="comment">// 设置session</span></span><br><span class="line">app.use(cookieSession(&#123;</span><br><span class="line">  name: <span class="string">&#x27;session&#x27;</span>,</span><br><span class="line">  keys: [<span class="string">&#x27;key1&#x27;</span>, <span class="string">&#x27;key2&#x27;</span>],<span class="comment">// 密码</span></span><br><span class="line">  maxAge: <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">1000</span><span class="comment">// 以毫秒为单位</span></span><br><span class="line">&#125;))</span><br><span class="line"><span class="comment">/* route.js */</span></span><br><span class="line"><span class="comment">// 设置字段</span></span><br><span class="line">req.session.username = username</span><br><span class="line"><span class="comment">// 删除session</span></span><br><span class="line">req.session = <span class="literal">null</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>maxAge</code>: a number representing the milliseconds from <code>Date.now()</code> for expiry</li>
+<li><code>expires</code>: a <code>Date</code> object indicating the cookie’s expiration date (expires at the end of session by default).</li>
+<li><code>path</code>: a string indicating the path of the cookie (<code>/</code> by default).</li>
+<li><code>domain</code>: a string indicating the domain of the cookie (no default).</li>
+<li><code>secure</code>: a boolean indicating whether the cookie is only to be sent over HTTPS (<code>false</code> by default for HTTP, <code>true</code> by default for HTTPS).</li>
+<li><code>secureProxy</code>: a boolean indicating whether the cookie is only to be sent over HTTPS (use this if you handle SSL not in your node process).</li>
+<li><code>httpOnly</code>: a boolean indicating whether the cookie is only to be sent over HTTP(S), and not made available to client JavaScript (<code>true</code> by default).</li>
+<li><code>signed</code>: a boolean indicating whether the cookie is to be signed (<code>true</code> by default).</li>
+<li><code>overwrite</code>: a boolean indicating whether to overwrite previously set cookies of the same name (<code>true</code> by default).</li>
+</ul>
+</blockquote>
+<h3 id="token"><a href="#token" class="headerlink" title="token"></a>token</h3><p>todo</p>
 
       
 
@@ -262,15 +228,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">gitee</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">new blog</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习笔记</a>
         		</li>
       		
 		</ul>
@@ -326,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://gitee.com/nciao/myblog/2020/12/29/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%8D%9A%E5%AE%A2%EF%BC%88hexo-gitee%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://gitee.com/nciao/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%99%BB%E5%BD%95%E6%80%81%E7%BB%B4%E6%8A%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -340,18 +298,9 @@
   
 <nav id="article-nav">
   
-    <a href="/myblog/2020/12/29/vs-code%E4%BD%BF%E7%94%A8%E4%BC%98%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vs code使用优化（一）
-        
-      </div>
-    </a>
   
-  
-    <a href="/myblog/2020/12/28/my-new-post/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">my new post</div>
+    <a href="/myblog/2021/01/31/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-nodejs-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%EF%BC%88%E4%B8%80%EF%BC%89-fs%E6%A8%A1%E5%9D%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">学习笔记-nodejs-核心模块（一）-fs模块</div>
       <i class="icon-circle-right"></i>
     </a>
   
